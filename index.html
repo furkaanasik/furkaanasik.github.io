@@ -30,8 +30,8 @@
             <h1 class="hero-title">Furkan Aşık</h1>
             <h2 class="hero-subtitle">Backend Developer</h2>
             <p class="hero-desc">
-                Java & Spring Boot ile ölçeklenebilir, distributed sistemler geliştiriyorum.
-                <br>Microservices, Event-Driven Architecture ve Cloud-Native teknolojilere odaklanıyorum.
+                Java, Spring Boot ve TypeScript ile ölçeklenebilir sistemler geliştiriyorum.
+                <br>Microservices, Event-Driven Architecture ve AI-powered uygulamalar üzerine odaklanıyorum.
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">Projelerim</a>
@@ -51,13 +51,13 @@
             <h2 class="section-title">Hakkımda</h2>
             <div class="about-content">
                 <p>
-                    Backend geliştirme üzerine uzmanlaşmış bir yazılım geliştiriciyim. 
-                    Özellikle <strong>Java</strong> ve <strong>Spring Boot</strong> ekosisteminde 
-                    dağıtık sistemler, mikroservis mimarileri ve event-driven uygulamalar geliştiriyorum.
+                    Backend ve full-stack geliştirme üzerine çalışan bir yazılım geliştiriciyim.
+                    <strong>Java / Spring Boot</strong> ekosisteminde mikroservis ve event-driven sistemler,
+                    <strong>TypeScript / Next.js</strong> ile modern web uygulamaları geliştiriyorum.
                 </p>
                 <p>
-                    Kod yazarken performans, güvenlik ve sürdürülebilirliği ön planda tutuyorum. 
-                    Clean Code prensipleri ve SOLID ilkeleri benim için vazgeçilmez.
+                    Son dönemde <strong>Claude API</strong> entegrasyonları ve agentic AI uygulamalarına
+                    ilgi duyuyorum. Kod yazarken performans, güvenlik ve sürdürülebilirliği ön planda tutuyorum.
                 </p>
             </div>
         </div>
@@ -108,6 +108,17 @@
                         <li><span class="skill-name">ELK Stack</span><span class="skill-level level-3"></span></li>
                     </ul>
                 </div>
+
+                <!-- Frontend & AI -->
+                <div class="skill-card">
+                    <h3 class="skill-category">Frontend & AI</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-name">TypeScript</span><span class="skill-level level-4"></span></li>
+                        <li><span class="skill-name">Next.js</span><span class="skill-level level-3"></span></li>
+                        <li><span class="skill-name">Claude API</span><span class="skill-level level-4"></span></li>
+                        <li><span class="skill-name">Kotlin</span><span class="skill-level level-3"></span></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -116,33 +127,115 @@
     <section id="projects" class="section projects">
         <div class="container">
             <h2 class="section-title">Projeler</h2>
-            <p class="section-subtitle">Projeler yakında eklenecek. GitHub profilimden inceleyebilirsiniz.</p>
-            
+
             <div class="projects-grid">
-                <!-- Placeholder cards - projeler hazır olunca güncellenecek -->
-                <article class="project-card placeholder">
-                    <div class="project-icon">📦</div>
-                    <h3>Microservices Project</h3>
-                    <p>Kubernetes, Resilience4j, Spring Cloud</p>
-                    <span class="coming-soon">Yakında</span>
+                <!-- ClauFlow - Featured -->
+                <article class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <div class="project-meta">
+                            <span class="project-stars">★ 2</span>
+                            <span class="project-lang lang-ts">TypeScript</span>
+                        </div>
+                    </div>
+                    <h3><a href="https://github.com/furkaanasik/ClauFlow" target="_blank">ClauFlow</a></h3>
+                    <p>AI-powered agentic kanban board. Bir task'ı DOING'e sürükle — Claude kodu yazar, PR açar ve REVIEW'a taşır.</p>
+                    <div class="project-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Claude API</span>
+                        <span class="tag">Agentic AI</span>
+                        <span class="tag">Open Source</span>
+                    </div>
                 </article>
-                
-                <article class="project-card placeholder">
-                    <div class="project-icon">⚡</div>
-                    <h3>CQRS & Event-Driven</h3>
-                    <p>Kafka, Event Sourcing, DDD</p>
-                    <span class="coming-soon">Yakında</span>
+
+                <!-- ebook-microservice -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📦</div>
+                        <div class="project-meta">
+                            <span class="project-lang lang-java">Java</span>
+                        </div>
+                    </div>
+                    <h3><a href="https://github.com/furkaanasik/ebook-microservice-minikube-resilience" target="_blank">Ebook Microservice</a></h3>
+                    <p>Minikube üzerinde çalışan dayanıklı mikroservis mimarisi. Resilience4j ile circuit breaking ve retry pattern.</p>
+                    <div class="project-tags">
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Resilience4j</span>
+                    </div>
                 </article>
-                
-                <article class="project-card placeholder">
-                    <div class="project-icon">📊</div>
-                    <h3>ELK Stack Integration</h3>
-                    <p>Elasticsearch, Logstash, Kibana</p>
-                    <span class="coming-soon">Yakında</span>
+
+                <!-- spring-boot-cqrs-eda -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">⚡</div>
+                        <div class="project-meta">
+                            <span class="project-lang lang-java">Java</span>
+                        </div>
+                    </div>
+                    <h3><a href="https://github.com/furkaanasik/spring-boot-cqrs-eda" target="_blank">CQRS & Event-Driven</a></h3>
+                    <p>Spring Boot ile CQRS pattern ve Event-Driven Architecture implementasyonu. Command/Query segregation.</p>
+                    <div class="project-tags">
+                        <span class="tag">CQRS</span>
+                        <span class="tag">Event Sourcing</span>
+                        <span class="tag">DDD</span>
+                    </div>
+                </article>
+
+                <!-- spring-boot-logstash-elk -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                        <div class="project-meta">
+                            <span class="project-stars">★ 1</span>
+                            <span class="project-lang lang-java">Java</span>
+                        </div>
+                    </div>
+                    <h3><a href="https://github.com/furkaanasik/spring-boot-logstash-elk" target="_blank">ELK Stack Integration</a></h3>
+                    <p>Spring Boot uygulamasını ELK Stack ile entegre eden tam loglama altyapısı. Logstash, Elasticsearch, Kibana.</p>
+                    <div class="project-tags">
+                        <span class="tag">Elasticsearch</span>
+                        <span class="tag">Logstash</span>
+                        <span class="tag">Kibana</span>
+                    </div>
+                </article>
+
+                <!-- nextjs-ecommerce -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🛒</div>
+                        <div class="project-meta">
+                            <span class="project-lang lang-ts">TypeScript</span>
+                        </div>
+                    </div>
+                    <h3><a href="https://github.com/furkaanasik/nextjs-ecommerce" target="_blank">Next.js E-Commerce</a></h3>
+                    <p>Next.js ile geliştirilmiş modern e-ticaret uygulaması.</p>
+                    <div class="project-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">E-Commerce</span>
+                    </div>
+                </article>
+
+                <!-- envrep-intellij -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🔧</div>
+                        <div class="project-meta">
+                            <span class="project-lang lang-kotlin">Kotlin</span>
+                        </div>
+                    </div>
+                    <h3><a href="https://github.com/furkaanasik/envrep-intellij" target="_blank">envrep-intellij</a></h3>
+                    <p>IntelliJ IDEA için environment variable replacement plugin. Kotlin ile geliştirilmiş IDE eklentisi.</p>
+                    <div class="project-tags">
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">IntelliJ Plugin</span>
+                        <span class="tag">IDE Tool</span>
+                    </div>
                 </article>
             </div>
-            
-            <a href="https://github.com/furkaanasik" target="_blank" class="btn btn-secondary" style="margin-top: 2rem;">
+
+            <a href="https://github.com/furkaanasik" target="_blank" class="btn btn-secondary" style="margin-top: 2.5rem;">
                 Tüm Projeler → GitHub
             </a>
         </div>
@@ -174,7 +267,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Furkan Aşık. Tüm hakları saklıdır.</p>
+            <p>&copy; 2026 Furkan Aşık. Tüm hakları saklıdır.</p>
         </div>
     </footer>
 </body>
